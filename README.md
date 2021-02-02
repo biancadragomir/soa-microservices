@@ -24,7 +24,9 @@ In order to secure this web application, I used firebase. Both the frontend and 
 The backend consists of a NEST JS application which listens of port 3002 to any incoming connections from the frontend. Then, based on what endpoint has been called, it will emit an event to the microservice client that can handle this event. The following endpoints are available:
 
 /vehicles - sends a get-vehicles event to the Swapi microservice
+
 /addVehicles - sends  an add-vehicles event to the Swapi-crud microservice
+
 /deleteVehicles - sends a delete-vehicles event to the Swapi-crud microservice
 
 **SECURITY:** the security is ensured by the preauth middleware from the backend. This middleware verifies whether or not the bearer token that is sent in a request is indeed one from firebase. If not, then access is denied. 
