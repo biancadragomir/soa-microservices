@@ -1,4 +1,4 @@
-# soa-microservices
+# SOA Microservices project
 
 The purpose of this document is to present the architecture of a microservices-based project.
 
