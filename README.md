@@ -46,4 +46,4 @@ API Gateway: this pattern is showcased by having a backend as the single source 
 Access token: this pattern is showcased by the aforementioned Firebase-enabled security which ensures that all requests must have a bearer token provided directly from firebase. Without this, the backend will deny the access.
 
 # Architecture diagram
-![architecture](https://imgur.com/a/74XrPSY)
+![architecture](https://i.imgur.com/HVAD9F8.jpg)
