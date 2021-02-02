@@ -43,9 +43,10 @@ Delete-vehicle: this event needs to receive the name of the vehicle in order to 
 
 # SOA concepts and patterns:
 
-Decompose by business capability - the  main functionalities of the application are spread among several microservices (in our case, 2) which do not depend on each other. Each microservice implements a small set of business operations. Each microservice is small enough and easy to maintain. This leads to a set of loosely coupled services.
-API Gateway: this pattern is showcased by having a backend as the single source of truth for the frontend. This backend exposes a set of API endpoints which are callable. By calling them, some specific events are afterwards sent to the microservice providers which can then handle them, without the frontend knowing about them or them knowing about each other. 
-Access token: this pattern is showcased by the aforementioned Firebase-enabled security which ensures that all requests must have a bearer token provided directly from firebase. Without this, the backend will deny the access.
+- **Decompose by business capability** - the  main functionalities of the application are spread among several microservices (in our case, 2) which do not depend on each other. Each microservice implements a small set of business operations. Each microservice is small enough and easy to maintain. This leads to a set of loosely coupled services.
+
+- **API Gateway**: this pattern is showcased by having a backend as the single source of truth for the frontend. This backend exposes a set of API endpoints which are callable. By calling them, some specific events are afterwards sent to the microservice providers which can then handle them, without the frontend knowing about them or them knowing about each other. 
+- **Access token**: this pattern is showcased by the aforementioned Firebase-enabled security which ensures that all requests must have a bearer token provided directly from firebase. Without this, the backend will deny the access.
 
 # Architecture diagram
 ![architecture](https://i.imgur.com/HVAD9F8.jpg)
